@@ -1,10 +1,225 @@
 <!DOCTYPE html>
-<html>
-<link href="style.css" rel="stylesheet" type="text/css">  
-
+<html lang='en'>
+<head>
+	<meta class="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<title>BC Electoral System Options</title>
+	<!-- Don't forget to add your metadata here -->
+	<link rel='stylesheet' href='css/style.css' />
+</head>
 <body>
-  
-<h1>Under construction </h1>
+	<!-- Hero(extended) navbar -->
+	<div class="navbar navbar--extended">
+		<nav class="nav__mobile"></nav>
+		<div class="container">
+			<div class="navbar__inner">
+				<a href="index.html" class="navbar__logo">BC Electoral System Options</a>
+				<nav class="navbar__menu">
+					<ul>
+						<li><a href="#Intro">About</a></li>
+						<li><a href="#">FPTP</a></li>
+						<li><a href="#">DMP</a></li>
+						<li><a href="#">MMP</a></li>
+						<li><a href="#">RUP</a></li>
+					</ul>
+				</nav>
+				<div class="navbar__menu-mob"><a href="" id='toggle'><svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z" class=""></path></svg></a></div>
+			</div>
+		</div>
+	</div>
+	<!-- Hero unit -->
+	<div class="hero">
+		<div class="hero__overlay hero__overlay--gradient"></div>
+		<div class="hero__mask"></div>
+		<div class="hero__inner">
+			<div class="container">
+				<div class="hero__content">
+					<div class="hero__content__inner" id='navConverter'>
+						<h1 class="hero__title">Electoral Systems Compared: <br> Look back at 2017 BC Elections</h1>
+						<p class="hero__text">Wonder what BC Government would look like under different electoral systems? Then read on.</p>
+						
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="hero__sub">
+		<span id="scrollToNext" class="scroll">
+			<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" class='hero__sub__down' fill="currentColor" width="512px" height="512px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"><path d="M256,298.3L256,298.3L256,298.3l174.2-167.2c4.3-4.2,11.4-4.1,15.8,0.2l30.6,29.9c4.4,4.3,4.5,11.3,0.2,15.5L264.1,380.9c-2.2,2.2-5.2,3.2-8.1,3c-3,0.1-5.9-0.9-8.1-3L35.2,176.7c-4.3-4.2-4.2-11.2,0.2-15.5L66,131.3c4.4-4.3,11.5-4.4,15.8-0.2L256,298.3z"/></svg>
+		</span>
+	</div>
+	<!-- Steps -->
+	<div class="steps landing__section" id="Intro">
+		<div class="container">
+			<h2>What's this about?</h2>
+			<p>Between October 22nd and November 30th British Columbians will vote in a mail-in referendum on the Electoral Reform. Aside from the status quo, three electoral systems are presented as options. These three options aim to create a government that proportionally represents BC voters as a whole: 40% of popular vote for a party should mean party getting 40% of seats. While the options seem complicated, the aim of this site is to show how 2017 BC election would unfold in all three cases.</p>
+		</div>
+		<div class="container">
+			<div class="steps__inner">
+				<div class="step">
+					<div class="step__media">
+						<img src="./images/fptp.png" class="step__image">
+					</div>
+					<h4>First Past The Post</h4>
+					<p class="step__text">Each electoral district elects a single MLA based on highest number of votes. This MLA represents the population of the district in the Legislative Assembly.</p>
+				</div>
+				<div class="step">
+					<div class="step__media">
+						<img src="./images/dmp_icon.png" class="step__image">
+					</div>
+					<h4>Dual Member Proportional</h4>
+					<p class="step__text">Most existing electoral districts are combined to have 2 MLA seats. One is elected based on FPTP, the other is allocated to a party in order to achieve proportional representation accross BC.</p>
+				</div>
+				<div class="step">
+					<div class="step__media">
+						<img src="./images/mmp.png" class="step__image">
+					</div>
+					<h4>Mixed Member Proportional</h4>
+					<p class="step__text">Existing districts are combined into larger districts with 1 MLA seat. Districts are grouped into regions with additional seats assigned to each. District elects one MLA based on FPTP, while regional seats are allocated to parties based on popular vote.</p>
+				</div>
+				<div class="step">
+					<div class="step__media">
+						<img src="./images/rup.png" class="step__image">
+					</div>
+					<h4>Rural-Urban Proportional</h4>
+					<p class="step__text">Existing rural districts will be converted to use MMP system. Existing (semi)urban districts will consolidate into larger districts. These will elect a group of MLAs based on a ranked ballot, likely resulting in proportional representation in the district.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Expanded sections -->
+	<!--
+	<div class="expanded landing__section">
+		<div class="container">
+			<div class="expanded__inner">
+				<div class="expanded__media" id="canvas3">
+				</div>
+				<div class="expanded__content">
+					<h2 class="expanded__title">Natural styling with almost nothing to learn</h2>
+					<p class="expanded__text">Evie brings you the pages you'll need and the structure to create your own, without a learning curve. It is minimal and mostly styles plain elements. There are only a few classes you'll need to know but nothing to disrupt your preferred coding style.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	-->
+	<!--<div class="expanded landing__section">
+		<div class="container">
+			<div class="expanded__inner">
+				<div class="expanded__media">
+					<img src="./images/undraw_frameworks.svg" class="expanded__image">
+				</div>
+				<div class="expanded__content">
+					<h2 class="expanded__title">Framework agnostic. Your front-end setup, your choice.</h2>
+					<p class="expanded__text">Evie has zero dependencies and uses vanilla JavaScript for a few functions with minimal footprint. You can use React, Vue, Angular, jQuery or whatever you prefer.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="expanded landing__section">
+		<div class="container">
+			<div class="expanded__inner">
+				<div class="expanded__media">
+					<img src="./images/together.svg" class="expanded__image">
+				</div>
+				<div class="expanded__content">
+					<h2 class="expanded__title">Ready for production or rapid prototyping</h2>
+					<p class="expanded__text">Landing, authentication and a few other pages to select from, despite the small size. Tested on production at unDraw with amazing speeds and unopinionated on how to structure your project. We really hope you'll find it awesome and useful!</p>
+				</div>
+			</div>
+		</div>
+	</div>-->
+	<!-- Call To Action -->
+	<!--<div class="cta cta--reverse">
+		<div class="container">
+			<div class="cta__inner">
+				<h2 class="cta__title">Get started now</h2>
+				<p class="cta__sub cta__sub--center">Grab the production version and begin your project instantly.</p>
+				<a href="#" class="button button__accent">Download Evie</a>
+			</div>
+		</div>
+	</div>-->
+	<!-- Footer -->
+	<div class="footer footer--dark">
+		<div class="container">
+			<div class="footer__inner">
+				<a href="index.html" class="footer__textLogo">About</a>
+				<div class="footer__data">
+					<div class="footer__data__item">
+						<div class="footer__row">
+							Created by <a href="https://www.linkedin.com/in/ogakulov/" target="_blank" class="footer__link">Oleksandr (Alex) Akulov</a>
+						</div>
+						<div class="footer__row">
+							GitHub code <a href="#" target="_blank" class="footer__link">ogakulov</a>
+						</div>
+						<div class="footer__row">
+						Template from <a href="https://evie.undraw.co/" target="_blank" class="footer__link">unDraw</a>
+						</div>
+						<div class="footer__row">
+						Icons from <a href="https://flaticon.com" target="_blank" class="footer__link">Flaticon</a>
+						</div>
+					</div>
+				<!--
+					<div class="footer__data__item">
+					<div class="footer__row">
+						<a href="https://github.com/anges244/evie" target="_blank" class="footer__link">GitHub</a>
+					</div>
+					<div class="footer__row">
+						<a href="https://twitter.com/undraw_co" target="_blank" class="footer__link">Twitter</a>
+					</div>
+					<div class="footer__row">
+						<a href="https://www.facebook.com/undraw.co/" target="_blank" class="footer__link">Facebook</a>
+					</div>
+					<div class="footer__row">
+						<a href="./additional.html" class="footer__link">MIT license</a>
+					</div>
+					</div> -->
+			</div>
+		</div>
+	</div>
+<script src='js/app.min.js'></script>
+<script src="https://d3js.org/d3.v4.min.js" charset="utf-8"></script>
+<script type="text/javascript" src="squares.json"></script>
+<script>
+	SCALE = 15
+	
+	var div = d3.select("canvas3").append("div")	
+    .attr("class", "tooltip")				
+    .style("opacity", 0);
 
+	
+	var grid = d3.select("#canvas3")
+    .append("svg")
+    .attr("width","350px")
+    .attr("height","250px");
+	
+var column = grid.selectAll(".square")
+    .data(gridData)
+    .enter().append("rect")
+    <!--.attr("class","square") -->
+    .attr("x", function(d) { return d.x * SCALE; })
+    .attr("y", function(d) { return d.y * SCALE; })
+    .attr("width", function(d) { return d.width * SCALE; })
+    .attr("height", function(d) { return d.height * SCALE; })
+	.on("mouseover",  function(d) {		
+									 div.transition()		
+										.duration(200)		
+										.style("opacity", .9);		
+									
+									 div.html(d.ED_NAME)	
+										.style("left", (d3.event.pageX) + "px")		
+										.style("top", (d3.event.pageY - 28) + "px")	
+            })
+	.on("mouseout", function(d) {		
+            div.transition()		
+                .duration(500)		
+                .style("opacity", 0);	
+            })
+    .style("fill", function(d) {
+						if      (d.PARTY_CODE == 1){return "#DF0101";}
+						else if (d.PARTY_CODE == 2){return "#FF8000";}
+						else if (d.PARTY_CODE == 0){return "#3D9B35";}
+						else                       {return "#F2F2F2";}})
+    .style("stroke", "#F2F2F2");
+</script>
 </body>
 </html>
